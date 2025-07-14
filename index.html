@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-box">
+      <div class="box">
+        <div class="head">
+            <p>Currency converter</p>
+        </div>
+        <form action="">
+        <div class="amount">
+            <p class="inp-Amount">Enter Amount</p>
+            <input type="text" value="1" id="amount">
+        </div>
+        <div class="list">
+            <div class="from s-list">
+                <p>from</p>
+                <div class="select">
+                    <img src="https://flagsapi.com/BE/flat/64.png" id="img1">
+                    <select id="from_select"></select>
+                </div>
+            </div>
+            <div class="exc-icon"><i class="fa-solid fa-right-left"></i></div>
+            <div class="To s-list">
+                <p>To</p>
+                <div class="select">
+                    <img src="https://flagsapi.com/AD/flat/64.png" id="img2">
+                    <select id="To_select"></select>
+                </div>
+            </div>
+        </div>
+        <div class="exchange-rate" id="exchange-rate">1 USD = 118.16 NPR</div>
+        </form>
+        <button type="reset" id="button">Get Exchange Rate</button>
+        
+        </div>
+    </div>
+    <script src="country-list.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
